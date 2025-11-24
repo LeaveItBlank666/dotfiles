@@ -30,7 +30,7 @@ Een persoonlijke en mooie Zsh-configuratie met kleuren, emoji’s, history manag
 1. **Clone de repository**
 
 ```bash
-git clone https://github.com/<jouw-gebruikersnaam>/my-zsh-config.git ~/my-zsh-config
+git clone https://github.com/LeaveItBlank666/my-zsh-config.git ~/my-zsh-config
 cd ~/my-zsh-config
 ```
 2. **Backup je oude .zshrc**
