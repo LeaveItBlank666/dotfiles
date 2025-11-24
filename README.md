@@ -1,72 +1,29 @@
-My Zsh Dotfiles
+# My Custom Zsh Configuration
 
-This repository contains my personal Zsh configuration, including a custom prompt, history settings, fzf fuzzy completion, syntax highlighting, and other handy aliases.
+Een persoonlijke, fancy en efficiënte `.zshrc` configuratie voor Zsh met:  
 
-1. Clone this repository
+- Emoji-based prompt met 🏠 voor home en 💀 voor root  
+- Fuzzy tab completion via **fzf**  
+- Command auto-suggestions  
+- Syntax highlighting  
+- Git en ls aliases  
+- Arsenal shell integration  
 
-On any machine where you want to use this configuration:
+---
 
-git clone https://github.com/<your-username>/dotfiles.git ~/dotfiles
+## 📦 Dependencies
 
+Voor een volledige ervaring heb je nodig:
 
-Replace <your-username> with your GitHub username.
+- [Zsh](https://www.zsh.org/) (minimaal 5.0)  
+- [fzf](https://github.com/junegunn/fzf) voor fuzzy completion  
+- [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)  
+- [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)  
 
-2. Install dependencies
+Installeer bijvoorbeeld op Debian/Ubuntu/Kali:
 
-Make sure you have the following installed:
-
-Zsh
-
-fzf
-
-zsh-syntax-highlighting
-
-zsh-autosuggestions
-
-On Debian/Ubuntu/Kali, you can install some with:
-
+```bash
 sudo apt update
 sudo apt install zsh fzf
-
-
-For syntax highlighting and autosuggestions:
-
-sudo apt install zsh-syntax-highlighting zsh-autosuggestions
-
-3. Activate this configuration
-
-You can either copy the .zshrc file to your home folder:
-
-cp ~/dotfiles/.zshrc ~/
-source ~/.zshrc
-
-
-Or, better, create a symlink so updates automatically apply:
-
-ln -sf ~/dotfiles/.zshrc ~/.zshrc
-source ~/.zshrc
-
-4. Optional: keep it up-to-date
-
-If you make changes in the repo, push them:
-
-cd ~/dotfiles
-git add .zshrc
-git commit -m "Update .zshrc"
-git push
-
-
-On another machine, pull the latest:
-
-cd ~/dotfiles
-git pull
-
-5. Notes
-
-The prompt automatically shows 💀 for root and ㉿ for normal user.
-
-Fuzzy tab completion is enabled via fzf.
-
-History, auto-correction, and command autosuggestions are all configured.
-
-Additional tools like Arsenal Shell integration are included if available.
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git /usr/share/zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-autosuggestions.git /usr/share/zsh-autosuggestions
