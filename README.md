@@ -33,15 +33,15 @@ Een persoonlijke en mooie Zsh-configuratie met kleuren, emoji’s, history manag
 git clone https://github.com/<jouw-gebruikersnaam>/my-zsh-config.git ~/my-zsh-config
 cd ~/my-zsh-config
 ```
-Backup je oude .zshrc
+2. **Backup je oude .zshrc**
 ```bash
 mv ~/.zshrc ~/.zshrc.backup
 ```
-Kopieer de nieuwe .zshrc naar je home directory
+3. **Kopieer de nieuwe .zshrc naar je home directory**
 ```bash
 cp .zshrc ~/
 ```
-Activeer de nieuwe configuratie
+4. **Activeer de nieuwe configuratie**
 ```bash
 source ~/.zshrc
 ```
