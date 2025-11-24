@@ -1,29 +1,52 @@
 # My Custom Zsh Configuration
 
-Een persoonlijke, fancy en efficiënte `.zshrc` configuratie voor Zsh met:  
-
-- Emoji-based prompt met 🏠 voor home en 💀 voor root  
-- Fuzzy tab completion via **fzf**  
-- Command auto-suggestions  
-- Syntax highlighting  
-- Git en ls aliases  
-- Arsenal shell integration  
+Een persoonlijke en mooie Zsh-configuratie met kleuren, emoji’s, history management, syntax highlighting, autosuggestions en fuzzy tab completion met `fzf`.
 
 ---
 
-## 📦 Dependencies
+## Inhoud
 
-Voor een volledige ervaring heb je nodig:
+- Fancy prompt met emoji per directory en root
+- Geschiedenisbeheer en autosuggestions
+- Syntax highlighting
+- Fuzzy tab completion via `fzf`
+- Git en `ls` shortcuts
+- Arsenal shell integratie
 
-- [Zsh](https://www.zsh.org/) (minimaal 5.0)  
-- [fzf](https://github.com/junegunn/fzf) voor fuzzy completion  
-- [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)  
-- [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)  
+---
 
-Installeer bijvoorbeeld op Debian/Ubuntu/Kali:
+## Vereisten
+
+- **Zsh** (`zsh`)
+- **fzf** (`sudo apt install fzf`)
+- **zsh-syntax-highlighting** (`sudo apt install zsh-syntax-highlighting`)
+- **zsh-autosuggestions** (`sudo apt install zsh-autosuggestions`)
+- Optioneel: Arsenal shell integration script als je Arsenal gebruikt
+
+---
+
+## Installatie
+
+1. **Clone de repository**
 
 ```bash
-sudo apt update
-sudo apt install zsh fzf
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git /usr/share/zsh-syntax-highlighting
-git clone https://github.com/zsh-users/zsh-autosuggestions.git /usr/share/zsh-autosuggestions
+git clone https://github.com/<jouw-gebruikersnaam>/my-zsh-config.git ~/my-zsh-config
+cd ~/my-zsh-config
+```
+Backup je oude .zshrc
+```bash
+mv ~/.zshrc ~/.zshrc.backup
+```
+Kopieer de nieuwe .zshrc naar je home directory
+```bash
+cp .zshrc ~/
+```
+Activeer de nieuwe configuratie
+```bash
+source ~/.zshrc
+```
+```
+ls -a ~ | grep .zshrc
+```bash
+[ -f /usr/share/doc/fzf/examples/key-bindings.zsh ] && source /usr/share/doc/fzf/examples/key-bindings.zsh
+```
