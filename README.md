@@ -47,6 +47,5 @@ source ~/.zshrc
 ```
 ```
 ls -a ~ | grep .zshrc
-```bash
 [ -f /usr/share/doc/fzf/examples/key-bindings.zsh ] && source /usr/share/doc/fzf/examples/key-bindings.zsh
 ```
